@@ -17,9 +17,11 @@ export class LoginServiceService {
 
 
 
-  login(user:any):Observable<any>{
-      return this.http.post(this.Api.getApiURL() + "/authUser",user);
-  }
+login(user: any): Observable<any> {
+  console.log('Enviando a:', this.Api.getApiURL() + "/authUser"); // Verifica la URL
+  console.log('Datos enviados:', user); // Verifica el objeto user
+  return this.http.post(this.Api.getApiURL() + "/authUser", user);
+}
 
   saveCredentials(user:any):void{
     const credencialString = JSON.stringify(user);
