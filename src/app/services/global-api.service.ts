@@ -8,7 +8,7 @@ export class GlobalApiService {
 
   constructor() {
     const savedApiUrl = localStorage.getItem('apiUrl'); // Revisa si hay una URL guardada en localStorage
-    this.apiUrl = savedApiUrl ? savedApiUrl : 'http://localhost:5000/dasHaus'; // Usa la guardada o la default
+    this.apiUrl = savedApiUrl ? savedApiUrl : 'http://localhost:5000/casNov'; // Usa la guardada o la default
     console.log(this.apiUrl, "URL inicializada");
   }
 

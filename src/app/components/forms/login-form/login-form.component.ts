@@ -16,7 +16,7 @@ import { GlobalApiService } from 'src/app/services/global-api.service';
 })
 export class LoginFormComponent implements OnInit {
   loginForm!:FormGroup;
-  selectedUrl: string = "http://localhost:5000/dasHaus";
+  selectedUrl: string = "http://localhost:5000/casNov";
   constructor(
     private formBuilder: FormBuilder,
     private logingService:LoginServiceService,
